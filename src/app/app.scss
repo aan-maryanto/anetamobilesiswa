@@ -14,3 +14,64 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+ion-alert {
+    &.alert-warning {
+        .alert-head {
+            background: map-get($colors, warning);
+            // color: #fff;
+            margin-bottom: 10px;
+        }
+        .alert-wrapper {
+            background: #F39C12 !important;
+            color: white;
+        }
+
+        .alert-message {
+            color: white;
+        }
+
+        .alert-button {
+            color: white;
+        }
+    }
+    &.alert-danger {
+        .alert-head {
+            background: map-get($colors, danger);
+            // color: #fff;
+            margin-bottom: 10px;
+        }
+        .alert-wrapper {
+            background: #E74C3C !important;
+            color: white;
+        }
+
+        .alert-message {
+            color: white;
+        }
+
+        .alert-button {
+            color: white;
+        }
+    }
+    &.alert-success {
+        .alert-head {
+            background: map-get($colors, success);
+            // color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .alert-wrapper {
+            background: #2ECC71 !important;
+            color: white;
+        }
+
+        .alert-message {
+            color: white;
+        }
+
+        .alert-button {
+            color: white;
+        }
+    }
+}

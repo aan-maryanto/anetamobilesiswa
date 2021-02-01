@@ -1,14 +1,36 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Aneta
     </ion-title>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="logoutBtn()">
+        <ion-icon name="power" style="color: white;"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+  <div *ngIf="isloading == true" style="display: flex; flex-direction: column; justify-content: center; align-items:center; height: 100%;">
+    <div style="text-align: center;">
+      <img src="assets/Rolling-1s-200px.gif" width="100px" alt="">
+      <p>Loading . . .</p>
+    </div>
+  </div>
+  <div *ngIf="isloading == false">
+    <h1>
+      {{ titleContentMentees }}
+    </h1>
+    <div (click)="openBrowser($event)" [innerHTML]="contentMentees"></div>
+  </div>
 </ion-content>
+
+<!-- <ion-content>
+  <div style="margin: 8px; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+    <img src="assets/aneta.png" alt="logo aneta">
+    <button ion-button full (click)="openBrowser()" style="margin-top: 100px;">Start Use App</button>
+  </div>
+</ion-content> -->
+<!-- <iframe [src]=" 'http://103.234.195.166/' | safe: 'resourceUrl' " frameborder="0" height="100%" width="100%"></iframe> -->
+<!-- <iframe [src]="linkUrl" frameborder="0" height="100%" width="100%"></iframe> -->

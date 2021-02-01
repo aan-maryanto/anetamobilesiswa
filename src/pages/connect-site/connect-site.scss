@@ -1,0 +1,71 @@
+page-connect-site {
+
+    .container {
+        height: 100vh;
+        background-color: white;
+    }
+
+    .container-two {
+        height: 90%;
+        width: 100%;
+        background-color: #FF5D22;
+        border-bottom-left-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    .logo {
+        width: 300px;
+        height: 90px;
+        margin-bottom: 80px;
+    }
+
+    .fieldInput {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center; 
+        width: 80%;
+    }
+
+    .inputUrl {
+        border-radius: 3px;
+        flex-grow: 100px;
+        padding: 10px 8px;
+        width: 100%;
+        border: none;
+    }
+
+    .btnConnect {
+        width: 80%;
+        border: 1px solid white;
+        background-color: #FF5D22;
+        border-radius: 3px;
+        padding: 10px 8px;
+        margin-top: 40px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+
+    .txtOR {
+        margin-top: 20px;
+        color: white;
+    }
+
+    .btnScan {
+        width: 80%;
+        border-color: white;
+        background-color: #2672B2;
+        border-radius: 5px;
+        padding: 10px 8px;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+
+}
